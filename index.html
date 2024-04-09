@@ -6,18 +6,21 @@
     <title>Email</title>
 </head>
 <body>
-    <h1>Bienvenido, envia tu correo</h1>
+    <h1>Bienvenido</h1>
+    <h2>Envia tu correo</h2>
+    <p>Ingrese su asunto y su mensaje a enviar</p>
 
-    <form action="enviar_correo.php" method="post">
-        <label for="destinatario">Para:</label>
-        <input type="email" id="destinatario" name="destinatario" placeholder="Ingrese la dirección de correo electronico" required><br/>
+
+    <form action="mailto:elvis.pachacama@itq.edu.ec" method="post" enctype="text/plain">
         <label for="asunto">Asunto</label>
-        <input type="text" id="asunto" name="asunto" placeholder="Ingrese el asunto" required><br/>
-        <label for="mensaje">Mensaje:</label><br/>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí" required></textarea><br/>
-        <input type="submit" value="enviar">
+        <input type="text" id="asunto" name="subject" placeholder="Ingrese el asunto" required>
+        <br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="body" rows="4" cols="50" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <br>
+        <input type="submit" value="Enviar"> 
+
     </form>
-
-
+    
 </body>
 </html>
